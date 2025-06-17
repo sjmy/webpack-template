@@ -2,9 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/js-dropdowns.js",
+  entry: "./src/main.js",
   output: {
-    filename: "js-dropdowns.js",
+    filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -31,8 +31,8 @@ module.exports = {
         test: /\.vue$/,
         exclude: /node_modules/,
         loader: "eslint-loader",
-        options: { emitWarning: true }
-      }
+        options: { emitWarning: true },
+      },
     ],
   },
 };
