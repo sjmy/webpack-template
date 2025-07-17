@@ -2,13 +2,13 @@
 
 A project template for web development.
 
-NPM scripts:
+#### NPM scripts:
 - "test": "echo \\\"Error: no test specified\\\" && exit 1",<br>
 - "build": "webpack --config webpack.prod.js",<br>
 - "dev": "webpack serve --open --config webpack.dev.js",<br>
 - "deploy": "git subtree push --prefix dist origin gh-pages"<br>
 
-Dev Dependencies:
+#### Dev Dependencies:
 - "@eslint/css": "^0.9.0",<br>
 - "@eslint/js": "^9.29.0",<br>
 - "@eslint/json": "^0.12.0",<br>
@@ -24,3 +24,17 @@ Dev Dependencies:
 - "webpack-cli": "^6.0.1",<br>
 - "webpack-dev-server": "^5.2.2",<br>
 - "webpack-merge": "^6.0.1"
+
+### Values to change
+##### package.json
+- name, description, main, homepage
+- repository > url
+- bugs > url
+##### webpack.common.js
+- entry
+- output > filename
+- plugins > HTMLWebpackPlugin template
+##### webpack.dev.js
+- devServer > watchFiles
+##### package-lock.json
+- run "npm install"
