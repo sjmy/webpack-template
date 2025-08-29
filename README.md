@@ -6,7 +6,7 @@ A project template for web development.
 
 - "test": "jest"
 - "build": "webpack --config webpack.prod.js"
-- "dev": "webpack serve --open --config webpack.dev.js"
+- "dev": "webpack serve --open --config webpack.dev.js" (known issue: may need to remove "type": "module" from package.json)
 - "deploy": "git subtree push --prefix dist origin gh-pages"
 
 ## Dev Dependencies
